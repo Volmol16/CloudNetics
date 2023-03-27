@@ -1,212 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="bothosting.png" />
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
-    <link href="/assets/css/style_main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <noscript>JavaScript Not Supported !</noscript>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1f02f9" />
-    <meta name="Language" content="en" />
-    <meta name="google-site-verification" content="vQuxUxYxP_RNLS3LHfKPGMFV_tNZWDTq3zWmxSjKaT4" />
-    <meta name="keywords" content="hosting,host,discord,discord bots,free hosting" />
-    <meta property="og:type" content="website" />
-    <meta name="description"
-        content="A Dedicated host for discord bots completely Free. Available and Online 24/7 for 7 days a week. Free Discord Bots hosting with powerful machines without any limitations. Easy to setup and launches instantly." />
-    <meta name="author" content="Bot-Hosting.net | A Free Host For Discord Bots">
-    <meta property="og:title" content="Bot-Hosting.net | A Free Host For Discord Bots" />
-    <meta property="og:site_name" content="Bot-Hosting.net | A Free Host For Discord Bots" />
-    <meta property="og:url" content="bot-hosting.net" />
-    <meta property="og:image" content="bothosting.png" />
-    <meta property="og:description"
-        content="A Dedicated host for discord bots completely Free. Available and Online 24/7 for 7 days a week. Free Discord Bots hosting with powerful machines without any limitations. Easy to setup and launches instantly." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@bothosting" />
-    <meta name="twitter:title" content="Bot-Hosting.net | A Free Host For Discord Bots" />
-    <meta name="twitter:description"
-        content="A Dedicated host for discord bots completely Free. Available and Online 24/7 for 7 days a week. Free Discord Bots hosting with powerful machines without any limitations. Easy to setup and launches instantly." />
-    <meta name="apple-mobile-web-app-title" content="Bot-Hosting.net | A Free Host For Discord Bots" />
-    <meta name="application-name"
-        content="A Dedicated host for discord bots completely Free. Available and Online 24/7 for 7 days a week. Free Discord Bots hosting with powerful machines without any limitations. Easy to setup and launches instantly." />
-    <title>Bot-Hosting.net | A Free Host For Discord Bots</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0VHSF9NEZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0VHSF9NEZ');
-    </script>
-
-</html>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CloudNetics</title>
 </head>
-<header id="navbar">
-    <nav class="navbar-container container">
-        <a href="/" class="home-link">
-            <div class="navbar-logo"><img src="bothosting.png" alt=""></div>
-            Bot-Hosting.net
-        </a>
-        <button type="button" class="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
-            aria-expanded="false">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div id="navbar-menu">
-            <ul class="navbar-links">
-                <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
-                <li class="navbar-item" style="background-color: #2970cc; border-radius: 5px;"><a class="navbar-link"
-                        href="/panel" style>Get Started</a></li>
-            </ul>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">CloudNetics.ru</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Основной</a>
+            <a href="#">Новости</a>
+            <a href="#">Начать</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Недорогой хост 24/7 идеально подходит для вашего бота <span>Discord!</span></h3>
+            <div class="social-media">
+                <div>
+                    <a href="#" class="btn">Разместите своих Discord ботов прямо сейчас!</a>
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
-<div class="cookie-container">
-    <p>We use cookies to give you the best experience on our site. Read our <a href="/legals">Legals
-            mentions</a> for further information.</p>
-    <button class="cookie-btn">Okay</button>
-</div>
-<script src="../assets/js/cookie.js"></script>
-<script>
-    const navbar = document.getElementById("navbar");
-    const navbarToggle = navbar.querySelector(".navbar-toggle");
-
-    function openMobileNavbar() {
-        navbar.classList.add("opened");
-        navbarToggle.setAttribute("aria-expanded", "true");
-    }
-
-    function closeMobileNavbar() {
-        navbar.classList.remove("opened");
-        navbarToggle.setAttribute("aria-expanded", "false");
-    }
-
-    navbarToggle.addEventListener("click", () => {
-        if (navbar.classList.contains("opened")) {
-            closeMobileNavbar();
-        } else {
-            openMobileNavbar();
-        }
-    });
-
-    const navbarMenu = navbar.querySelector("#navbar-menu");
-    const navbarLinksContainer = navbar.querySelector(".navbar-links");
-
-    navbarLinksContainer.addEventListener("click", (clickEvent) => {
-        clickEvent.stopPropagation();
-    });
-
-    navbarMenu.addEventListener("click", closeMobileNavbar);
-</script>
-<section class="sectionnavbar">
-    <div class="sectionnavbardescription">
-        <h1>A free 24/7 host perfect for your Discord bot!</h1>
-        <p>Have you ever wanted a free, good quality host dedicated to high performance for Discord bots?</p>
-        <button onclick="window.location.href='/panel'"><i class="fa fa-server"></i><a href="/panel"
-                style="color: #fff;font-size: 15px;">Host Your Discord Bot(s) Now For Free!</a></button>
-    </div>
-</section>
-<section class="sectionseparation">
+    </section>
     <div style="height:150px;overflow:hidden">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height:100%;width:100%">
             <path d="M-2.54,28.13 C143.62,210.69 298.81,-81.41 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke:none;fill:#2c2f33"></path>
+                style="stroke: none; fill: #393e40; --darkreader-inline-stroke: none; --darkreader-inline-fill: #cac5be;"
+                data-darkreader-inline-stroke="" data-darkreader-inline-fill=""></path>
         </svg>
     </div>
-</section>
-<section class="sectiondescription">
-    <div class="info" style="margin-bottom: 100px;">
-        <h1 style="font-size: 50px; color: rgb(121, 219, 255);">🗣️ Frequently asked questions</h1>
-        <h3 style="color: lightblue;">What languages do you support?</h3>
-        <p style="font-size: 20px;">We support Python, NodeJS, Java and Lua!</p>
-        <h3 style="color: lightblue;">Is it really free?</h3>
-        <p style="font-size: 20px;">Yes! We believe in making hosting free and accessible for everyone!</p>
-        <h3 style="color: lightblue;">Will my bot stay online?</h3>
-        <p style="font-size: 20px;">Yes, your bot will run 24/7 on our powerful hardware.</p>
-        <h3 style="color: lightblue;">Why do I need a host?</h3>
-        <p style="font-size: 20px;">Running your bot on your computer requires you to keep it on 24/7 and puts a strain
-            on it's resources, we can handle that for you. You've done the developing, you've created an awesome project
-            and now it's time to bring it alive with a reliable and stable host!</p>
-    </div>
-    <div id="cloud-intro">
-        <div class="sectionsitedescription">
-            <div class="block">
-                <div class="block_container">
-                    <img src="https://img.icons8.com/offices/50/000000/laptop.png" />
-                    <h2>Sign Up</h2>
-                    <p>Click "Get Started" and login you with discord to starting hosting your discord bot right now!
-                    </p>
-                </div>
-            </div>
-            <div class="block">
-                <div class="block_container">
-                    <img
-                        src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/64/000000/external-coin-financial-itim2101-lineal-color-itim2101.png" />
-                    <h2>Earn Coins</h2>
-                    <p>Earn coins by using the coins generator!</p>
-                </div>
-            </div>
-            <div class="block">
-                <div class="block_container">
-                    <img src="https://img.icons8.com/color/48/000000/internet-hub.png" />
-                    <h2>Host Your Discord Bots</h2>
-                    <p>Use your coins to host your discord bot(s) for free!</p>
-                </div>
-            </div>
+    <section class="info">
+        <div class="info-content">
+            <h1>Часто задаваемые вопросы</h1>
         </div>
-    </div>
-</section>
-<section class="sectionseparation2">
-    <div style="height:150px;overflow:hidden">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height:100%;width:100%">
-            <path d="M501.411 64.103C355.251-118.457 200.061 173.643-1.129 42.253L-1.129-57.767 498.871-57.767Z"
-                style="stroke:none;fill:#2c2f33"></path>
-        </svg>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="title">
-                <h2>Bot-Hosting.net</h2>
-                <p>Have you ever wished for a free, good quality Discord host bot? If yes, Bot-Hosting.net is the host
-                    for you. We have built a host designed for Discord bots.</p>
-            </div>
-            <div class="link">
-                <h4>Links</h4>
-                <ul>
-                    <li><i class="fa fa-angle-double-right"></i><a href="/about">About</a></li>
-                    <li><i class="fa fa-angle-double-right"></i><a href="/legals">Terms & Conditions and Privacy
-                            Policy</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <h5>Copyright 2023 ©. All Rights Reserved. Website developed by the Bot-Hosting.net team</h5>
-            </div>
+        <div class="info-content2">
+            <h2><span>Какие языки вы поддерживаете?</span><br>Мы поддерживаем Python, NodeJS, Java и Lua!</h2>
         </div>
-    </div>
-</footer>
-<script>
-    const searchParams = new URLSearchParams(window.location.search)
-    if (searchParams.get('aff')) {
-        localStorage.setItem('affiliate', searchParams.get('aff'))
-    }
-</script>
+        <div class="info-content2">
+            <h2><span>Будет ли мой бот оставаться онлайн?</span><br>Да, ваш бот будет работать 24/7 на нашем мощном
+                оборудовании.</h2>
+        </div>
+
+    </section>
+</body>
 
 </html>
