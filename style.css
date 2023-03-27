@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+/* Ширина и высота полосы прокрутки */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Фоновый цвет полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Цвет выносной кнопки */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Цвет выносной кнопки при наведении курсора */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 * {
     margin: 0;
