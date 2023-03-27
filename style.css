@@ -19,11 +19,12 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background-color: #222529;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-radius: 0 0 15px 15px;
 }
 
 .logo {
@@ -125,6 +126,7 @@ body {
 }
 
 .info-content {
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
 }
