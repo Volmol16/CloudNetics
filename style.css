@@ -143,6 +143,7 @@ body {
 }
 
 .info-content2 {
+    background-color: #393E40;
     margin-left: 50vh;
     display: flex;
     align-items: center;
