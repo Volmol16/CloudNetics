@@ -153,3 +153,19 @@ body {
 .info-content2 h2 span {
     color: #0ef;
 }
+
+.Downn{
+    background-color: #2C2F33;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.downa{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.Sita{
+    color: black;
+}
