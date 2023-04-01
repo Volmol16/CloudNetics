@@ -13,11 +13,11 @@ body {
 }
 
 * {
-    scrollbar-width: 0;
+  scrollbar-width: 0;
 }
 
 *::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 .header {

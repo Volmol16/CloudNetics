@@ -69,7 +69,7 @@ body {
 }
 
 .home-content {
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 .home-content h3 {
@@ -169,4 +169,8 @@ body {
 
 .Sita{
     color: black;
+}
+
+.console-container {
+    max-width: 500px;
 }
