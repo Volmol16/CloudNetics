@@ -39,8 +39,6 @@ function consoleText(words, id) {
       visible = false;
 
     } else {
-      con.className = 'console-underscore'
-
       visible = true;
     }
   }, 400)
