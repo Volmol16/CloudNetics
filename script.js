@@ -39,6 +39,7 @@ function consoleText(words, id) {
       visible = false;
 
     } else {
+
       visible = true;
     }
   }, 400)
