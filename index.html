@@ -1,96 +1,83 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <link rel="shortcut icon" sizes="16x16" href="icon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="robots" content="index, follow">
-    <meta name="Language" content="ru" />
-    <meta name="keywords" content="hosting,host,discord,discord bots,hosting" />
-    <meta property="og:type" content="website" />
-    <meta name="description"
-        content="CloudNetics - надежный хостинг для Discord-ботов с мощными серверами. Установка и запуск происходят быстро и легко, чтобы вы могли сосредоточиться на создании вашего бота, а не на его хостинге." />
-    <meta name="author" content="CloudNetics.ru | Недорогой хост для Discord ботов">
-    <meta property="og:title" content="CloudNetics.ru | Недорогой хост для Discord ботов" />
-    <meta property="og:site_name" content="CloudNetics.ru | Недорогой хост для Discord ботов" />
-    <meta property="og:url" content="cloudnetics.ru" />
-    <meta property="og:image" content="icon.png" />
-    <meta property="og:description"
-        content="CloudNetics - надежный хостинг для Discord-ботов с мощными серверами. Установка и запуск происходят быстро и легко, чтобы вы могли сосредоточиться на создании вашего бота, а не на его хостинге." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@cloudnetics" />
-    <meta name="twitter:title" content="CloudNetics.ru | Недорогой хост для Discord ботов" />
-    <meta name="twitter:description"
-        content="CloudNetics - надежный хостинг для Discord-ботов с мощными серверами. Установка и запуск происходят быстро и легко, чтобы вы могли сосредоточиться на создании вашего бота, а не на его хостинге." />
-    <meta name="apple-mobile-web-app-title" content="CloudNetics.ru | Недорогой хост для Discord ботов" />
-    <meta name="application-name"
-        content="CloudNetics - надежный хостинг для Discord-ботов с мощными серверами. Установка и запуск происходят быстро и легко, чтобы вы могли сосредоточиться на создании вашего бота, а не на его хостинге." />
-    <title>CloudNetics | Недорогой хост для Discord ботов</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="logo">CloudNetics.ru</a>
+    <!--header-->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-cloud'></i></i>CloudNetics.ru</a>
 
-        <nav class="navbar">
-            <a href="#" class="active">Основной</a>
-            <a href="news.html">Новости</a>
-            <a href="prices.html">Цены</a>
-            <a href="https://panel.cloudnetics.ru/auth/login">Начать</a>
-        </nav>
+        <ul class="navlist">
+            <li><a href="#" class="active">Основной</a></li>
+            <li><a href="#">Новости</a></li>
+
+            <div class="h-main">
+                <a href="#" class="h-btn">Купить</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <div class="bx bx-moon" id="darkmode"></div>
+            </div>
+        </ul>
     </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h3>Недорогой хост, доступный 24/7 для вашего бота <span id='text'></span></h3>
-            <div class="social-media">
-                <div>
-                    <a href="https://panel.cloudnetics.ru/auth/login" class="btn">Разместите своих Discord ботов прямо
-                        сейчас!</a>
+    <!--hero section-->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>CloudNetics</h1>
+            <p>Недорогой хост, доступный 24/7 для вашего бота Discord</p>
+            <div class="hero-in">
+                <div class="box">
+                    <h3>Minimal</h3>
+                    <h5>Cpu: 20%
+                        Memory: 200 mb
+                        Ssd: 1024 mb
+                        Mysql: 1
+                        Price: 39р/month</h5>
                 </div>
+
+                <div class="box">
+                    <h3>Normal</h3>
+                    <h5>Cpu: 60%
+                        Memory: 500 mb
+                        Ssd: 2536 mb
+                        Mysql: 2
+                        Price: 99/month</h5>
+                </div>
+
+                <div class="box">
+                    <h3>Pro</h3>
+                    <h5>Cpu: 100%
+                        Memory: 1024 mb
+                        Ssd: 5120 mb
+                        Mysql: 2
+                        Price: 199/month</h5>
+                </div>
+
+
             </div>
         </div>
+
+        <div class="hero-img">
+            <img src="/img/pngwing.com.png" alt="">
+
+        </div>
     </section>
-    <div style="height:150px;overflow:hidden">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height:100%;width:100%">
-            <path d="M-2.54,28.13 C143.62,210.69 298.81,-81.41 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #393e40; --darkreader-inline-stroke: none; --darkreader-inline-fill: #cac5be;"
-                data-darkreader-inline-stroke="" data-darkreader-inline-fill=""></path>
-        </svg>
+    
+    <div class="down-arrow">
+        <i class='bx bx-down-arrow-alt'></i>
     </div>
-    <section class="info">
-        <div class="info-content">
-            <h1>Часто задаваемые вопросы</h1>
-        </div>
-        <div class="info-content2">
-            <h2><span>Какие языки вы поддерживаете?</span><br>Мы поддерживаем Python, NodeJS, Java, Rust и Lua!</h2>
-        </div>
-        <div class="info-content2">
-            <h2><span>Будет ли мой бот оставаться онлайн?</span><br>Да, ваш бот будет работать 24/7 на нашем мощном
-                оборудовании.</h2>
-        </div>
-    </section>
-    <div style="height:150px;overflow:hidden">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height:100%;width:100%">
-            <path d="M501.411 64.103C355.251-118.457 200.061 173.643-1.129 42.253L-1.129-57.767 498.871-57.767Z"
-                style="stroke:none;fill:#393e40"></path>
-        </svg>
-    </div>
-    <section class="Downn">
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 text-center">
-                    <br>
-                    <p class="downa">Copyright 2023 ©. All Rights Reserved. Website developed by the CloudNetics.ru team
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 

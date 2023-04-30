@@ -1,46 +1,34 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Discord', 'Telegram'], 'text',['tomato','rebeccapurple','lightblue']);
+let darkmode = document.querySelector('#darkmode')
 
-function consoleText(words, id) {
-  var visible = true;
-  var visible = true;
-  var con = document.getElementById('console');
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id)
-  window.setInterval(function() {
-
-    if (letterCount === 0 && waiting === false) {
-      waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount)
-      window.setTimeout(function() {
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount)
-      letterCount += x;
+darkmode.onclick = () => {
+    if(darkmode.classList.contains('bx-moon')){
+        darkmode.classList.replace('bx-moon', 'bx-sun');
+        document.body.classList.add('color');
+    }else{
+        darkmode.classList.replace('bx-sun', 'bx-moon');
+        document.body.classList.remove('color');
     }
-  }, 120)
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'console-underscore hidden'
-      visible = false;
-
-    } else {
-
-      visible = true;
-    }
-  }, 400)
 }
+
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x')
+    navlist.classList.toggle('open')
+};
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x')
+    navlist.classList.remove('open')
+};
+
+const sr = ScrollReveal ({
+    distance: '70px',
+    duration: 2700,
+    reset: true
+});
+
+sr.reveal('.hero-text',{deley:200, origin: 'bottom'})
+sr.reveal('.hero-img',{deley:350, origin: 'top'})
+sr.reveal('.down-arrow',{deley:450, origin: 'right'})
