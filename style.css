@@ -125,8 +125,11 @@ section {
     gap: 1rem;
 }
 
+.hero a {
+    color: var(--text-color);
+}
 .hero-img {
-    height: 700px;
+    height: 600px;
     width: 700px;
 }
 
@@ -236,7 +239,7 @@ body.color{
 }
 @media (max-width: 1470px){
     .hero-img{
-        height: 600px;
+        height: 500px;
         width: 600px;
     }
 }
@@ -250,7 +253,7 @@ body.color{
         margin-bottom: 2px;
     }
     .hero-img{
-        width: 500px;
+        width: 600px;
         height: 500px;
     }
 }
@@ -289,7 +292,7 @@ body.color{
     }
     .navlist{
         position: absolute;
-        top: -700%;
+        top: -700px;
         left: 0;
         right: 0;
         display: flex;
