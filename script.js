@@ -1,34 +1,24 @@
-let darkmode = document.querySelector('#darkmode')
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+};
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('open');
+};
+
+let darkmode = document.querySelector('#darkmode');
 
 darkmode.onclick = () => {
     if(darkmode.classList.contains('bx-moon')){
         darkmode.classList.replace('bx-moon', 'bx-sun');
-        document.body.classList.add('color');
+        document.body.classList.add('dark');
     }else{
         darkmode.classList.replace('bx-sun', 'bx-moon');
-        document.body.classList.remove('color');
+        document.body.classList.remove('dark')
     }
 }
-
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
-
-menu.onclick = () => {
-    menu.classList.toggle('bx-x')
-    navlist.classList.toggle('open')
-};
-
-window.onscroll = () => {
-    menu.classList.remove('bx-x')
-    navlist.classList.remove('open')
-};
-
-const sr = ScrollReveal ({
-    distance: '70px',
-    duration: 2700,
-    reset: true
-});
-
-sr.reveal('.hero-text',{deley:200, origin: 'bottom'})
-sr.reveal('.hero-img',{deley:350, origin: 'top'})
-sr.reveal('.down-arrow',{deley:450, origin: 'right'})
